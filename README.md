@@ -8,4 +8,4 @@
 4. Your local server will automatically execute `index.php`.
 
 :warning:This is my final year project and I develop it alone. Since I am student, it may have some disfunctionality. <br>
-:warning:This web-based ecommerce did not responsive enough time limit.
+:warning:This web-based ecommerce did not responsive enough due to time limit.
