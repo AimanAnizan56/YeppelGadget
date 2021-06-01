@@ -7,5 +7,5 @@
 3. Start your local server and point to this file.
 4. Your local server will automatically execute `index.php`.
 
-:warning:This is my final year project and I do it alone. So, it may have some disfunctionality. <br>
+:warning:This is my final year project and I develop it alone. Since I am student, it may have some disfunctionality. <br>
 :warning:This web-based ecommerce did not responsive enough time limit.
