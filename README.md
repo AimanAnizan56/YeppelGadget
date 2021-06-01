@@ -3,7 +3,7 @@
 :scroll:Step to use:-
 
 1. Create database name `yeppel gadget`.
-2. Import yeppel_gadget.sql into `yeppel gadget`.
+2. Import "yeppel_gadget.sql" into `yeppel gadget`.
 3. Start your local server and point to this file.
 4. Your local server will automatically execute index.php.
 
