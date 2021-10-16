@@ -21,7 +21,7 @@
             if($order_result -> num_rows == 0):
 
                 // insert new order
-                $db -> query("INSERT INTO orders VALUES ('','1','$user_id')") or die("query 1 error: ".$db -> error);
+                $db -> query("INSERT INTO orders VALUES (NULL,'1','$user_id')") or die("query 1 error: ".$db -> error);
 
                 // retrieve new order inserted
                 $order_id = $db -> query("SELECT last_insert_id() as id") -> fetch_assoc()['id'];
@@ -65,14 +65,14 @@
         echo 'login required'; // output this and reutrn data by ajax -- checked later with if else statement
     endif;
     function insert_product(
-        string $id = '',
+        string $id = NULL,
         int $quantity,
         int $price,
         string $orderId,
         string $productId,
         mysqli $conn
     ){
-        $conn -> query("INSERT INTO item VALUES ('',$quantity,'$price','$orderId','$productId')") or die("query 3 error: ".$conn -> error);
+        $conn -> query("INSERT INTO item VALUES (NULL,$quantity,'$price','$orderId','$productId')") or die("query 3 error: ".$conn -> error);
         die ("added to cart");
         exit;
     }
