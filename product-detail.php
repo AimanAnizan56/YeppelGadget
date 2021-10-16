@@ -118,6 +118,8 @@
                     setTimeout(()=>{
                         $("#added-to-cart").modal("close"); // close modal after 1 sec
                     },1000);
+                } else {
+                    console.log(data)
                 }
                 if (data == "login required") {
                     window.location.replace("login-page.php"); // redirect to login page
