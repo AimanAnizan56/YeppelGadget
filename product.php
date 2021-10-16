@@ -49,7 +49,7 @@
         echo '</blockquote>';
 
         // execute sql query
-        $result = $db -> query($sql) or die("query failed");
+        $result = $db -> query($sql) or die($db -> error);
     ?>
         <div class="container row" style="margin-top: 3rem;">
             <?php while($result -> num_rows > 0 and $data = $result -> fetch_assoc()): // output product -- by category / search / all product ?>
